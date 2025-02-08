@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ứng dụng leo núi</string>
+    <string name="climb_button">Leo</string>
+    <string name="fall_button">Ngã</string>
+    <string name="reset_button">Chơi Lại</string>
+</resources>

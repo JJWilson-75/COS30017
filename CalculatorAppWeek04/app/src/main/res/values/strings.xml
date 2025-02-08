@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CalculatorApp</string>
+    <string name="equals">equals</string>
+    <string name="plus">plus</string>
+    <string name="subtract">subtract</string>
+    <string name="hint_for_integer_1">integer 1</string>
+    <string name="hint_for_integer_2">integer 2</string>
+</resources>

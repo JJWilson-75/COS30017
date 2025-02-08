@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ứng dụng tính toán</string>
+    <string name="equals">bằng</string>
+    <string name="plus">cộng</string>
+    <string name="subtract">trừ</string>
+    <string name="hint_for_integer_1">số 1</string>
+    <string name="hint_for_integer_2">số 2</string>
+</resources>
