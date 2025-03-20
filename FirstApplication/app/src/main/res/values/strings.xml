@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">FirstApplication</string>
-    <string name="book">Harry Potter</string>
-    <string name="author">JK Rowling</string>
-    <string name="year">1997</string>
-</resources>
