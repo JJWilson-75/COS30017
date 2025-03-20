@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppBackground"
+    android:paddingHorizontal="30dp"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/instrumentPicture"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/image_content_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saxophone_picture_1" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_name"
+        style="@style/Title"
+        app:layout_constraintEnd_toStartOf="@+id/btnPrev"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInstrumentBorrow"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:enabled="false"
+        android:text="@string/label_btn_instrument_borrow"
+        app:layout_constraintEnd_toStartOf="@+id/btnChangeLang"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnChangeLang"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/btn_change_language_content_description"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInstrumentBorrow"
+        app:layout_constraintEnd_toStartOf="@+id/creditAccount"
+        app:layout_constraintTop_toTopOf="@+id/btnInstrumentBorrow" />
+
+    <TextView
+        android:id="@+id/creditAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="TextView"
+        style="@style/Normal"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInstrumentBorrow"
+        app:layout_constraintEnd_toStartOf="@+id/coinImage"
+        app:layout_constraintTop_toTopOf="@+id/btnInstrumentBorrow" />
+
+    <ImageView
+        android:id="@+id/coinImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/image_coin_content_description"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInstrumentBorrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnInstrumentBorrow"
+        app:srcCompat="@drawable/coin_icon" />
+
+    <Button
+        android:id="@+id/btnPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/label_btn_prev"
+        style="@style/ButtonStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChangeLang" />
+
+    <Button
+        android:id="@+id/btnBorrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="@string/label_btn_borrow"
+        style="@style/ButtonStyle"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrev" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/label_btn_next"
+        style="@style/ButtonStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnPrev"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintTop_toBottomOf="@+id/appName"
+        app:selectionRequired="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipGuitar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="true"
+            android:text="@string/guitar" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPiano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="true"
+            android:text="@string/piano" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipSaxophone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="true"
+            android:text="@string/saxophone" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/instrumentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        style="@style/Heading"
+        app:layout_constraintEnd_toStartOf="@+id/btnPrev"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroupType" />
+
+    <TextView
+        android:id="@+id/instrumentType"
+        style="@style/Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_text_type"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintTop_toBottomOf="@+id/instrumentName" />
+
+    <TextView
+        android:id="@+id/instrumentPrice"
+        style="@style/Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/label_text_price"
+        app:layout_constraintEnd_toStartOf="@+id/btnPrev"
+        app:layout_constraintTop_toBottomOf="@+id/instrumentName" />
+
+    <TextView
+        android:id="@+id/instrumentStockNumber"
+        style="@style/Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/label_text_stock_number"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintTop_toBottomOf="@+id/instrumentType" />
+
+    <TextView
+        android:id="@+id/instrumentWeight"
+        style="@style/Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/label_text_weight"
+        app:layout_constraintEnd_toStartOf="@+id/btnPrev"
+        app:layout_constraintTop_toBottomOf="@+id/instrumentPrice" />
+
+    <RatingBar
+        android:id="@+id/instrumentRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="4.5"
+        android:stepSize="0.5"
+        style="@style/RatingBarStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnPrev"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintTop_toBottomOf="@+id/instrumentStockNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

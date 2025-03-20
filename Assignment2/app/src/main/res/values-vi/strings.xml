@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Thuê Nhạc Cụ</string>
+
+    <string name="label_btn_instrument_borrow">Chi Tiết</string>
+    <string name="label_btn_prev">Trước</string>
+    <string name="label_btn_borrow">Mượn</string>
+    <string name="label_btn_next">Sau</string>
+
+    <string name="image_content_description">Hình Ảnh Nhạc Cụ</string>
+    <string name="btn_change_language_content_description">Biểu Tượng Quốc Gia</string>
+    <string name="image_coin_content_description">Biểu tượng xu tạo bởi Freepik - Flaticon</string>
+
+    <string name="guitar">Đàn Guitar</string>
+    <string name="piano">Dương Cầm</string>
+    <string name="saxophone">Kèn Saxophone</string>
+
+    <string name="label_text_name">Tên Nhạc Cụ</string>
+    <string name="label_text_type">Thể Loại</string>
+    <string name="label_text_price">Giá Tháng</string>
+    <string name="label_text_stock_number">Tồn Kho</string>
+    <string name="label_text_weight">Khối Lượng</string>
+
+    <string name="label_btn_confirm">Xác Nhận</string>
+    <string name="label_btn_cancel">Hủy</string>
+
+    <string name="label_rental_email">Email:</string>
+    <string name="label_rental_number">Số Lượng</string>
+    <string name="label_rental_time">Thời Gian Thuê (Tháng)</string>
+    <string name="label_rental_price">Tổng Tiền</string>
+
+    <string name="hint_rental_email">john123@example.com</string>
+    <string name="rental_number_slider_content_description">Thanh trượt để chọn số lượng mượn</string>
+    <string name="rental_time_slider_content_description">Thanh trượt để chọn thời gian mượn</string>
+
+    <string name="empty_email_message">Vui lòng không để địa chỉ email trống</string>
+    <string name="invalid_email_message">Vui lòng điền địa chỉ email phù hợp</string>
+    <string name="insufficient_balance_message">Không đủ tiền để thuê</string>
+
+    <string name="rental_confirmation_message">Thuê thành công. Nhấn nút Chi Tiết để biết thêm thông tin</string>
+    <string name="cancel_message">Hủy thuê nhạc cụ</string>
+    <string name="out_of_instrument_message">Không có nhạc cụ để thuê lúc này</string>
+
+    <string name="dialog_exit_label">Ok</string>
+    <string name="label_rental_id">ID Thuê</string>
+</resources>

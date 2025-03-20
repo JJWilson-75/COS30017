@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Instrument Rental</string>
+
+    <string name="label_btn_instrument_borrow">Details</string>
+    <string name="label_btn_prev">Previous</string>
+    <string name="label_btn_borrow">Borrow</string>
+    <string name="label_btn_next">Next</string>
+
+    <string name="image_content_description">Instrument Image</string>
+    <string name="btn_change_language_content_description">Country Icon</string>
+    <string name="image_coin_content_description">Coin icons created by Freepik - Flaticon</string>
+
+    <string name="guitar">Guitar</string>
+    <string name="piano">Piano</string>
+    <string name="saxophone">Saxophone</string>
+
+    <string name="label_text_name">Instrument Name</string>
+    <string name="label_text_type">Type</string>
+    <string name="label_text_price">Monthly Price</string>
+    <string name="label_text_stock_number">Stock Number</string>
+    <string name="label_text_weight">Weight</string>
+
+    <string name="label_btn_confirm">Confirm</string>
+    <string name="label_btn_cancel">Cancel</string>
+
+    <string name="label_rental_email">Email:</string>
+    <string name="label_rental_number">Number</string>
+    <string name="label_rental_time">Rental Time (Month)</string>
+    <string name="label_rental_price">Total Price</string>
+
+    <string name="hint_rental_email">john123@example.com</string>
+    <string name="rental_number_slider_content_description">Slider to select rental number</string>
+    <string name="rental_time_slider_content_description">Slider to select rental time</string>
+
+    <string name="empty_email_message">Please do not leave email address empty</string>
+    <string name="invalid_email_message">Please enter a valid email address</string>
+    <string name="insufficient_balance_message">Insufficient money to rent</string>
+
+    <string name="rental_confirmation_message">Successful rental. Click Details button to know more</string>
+    <string name="cancel_message">Cancel the rental of instrument</string>
+    <string name="out_of_instrument_message">Out of instruments to rent right now</string>
+
+    <string name="dialog_exit_label">Ok</string>
+    <string name="label_rental_id">Rental ID</string>
+</resources>

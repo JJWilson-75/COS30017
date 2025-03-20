@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppBackground"
+    android:paddingHorizontal="30dp"
+    android:paddingTop="20dp"
+    tools:context=".BookingActivity">
+
+    <ImageView
+        android:id="@+id/instrumentPicture"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/image_content_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saxophone_picture_1" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_name"
+        style="@style/Title"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirm"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnChangeLang"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/btn_change_language_content_description"
+        app:layout_constraintBottom_toBottomOf="@+id/appName"
+        app:layout_constraintEnd_toStartOf="@+id/creditAccount"
+        app:layout_constraintTop_toTopOf="@+id/appName" />
+
+    <TextView
+        android:id="@+id/creditAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="TextView"
+        style="@style/Normal"
+        app:layout_constraintBottom_toBottomOf="@+id/appName"
+        app:layout_constraintEnd_toStartOf="@+id/coinImage"
+        app:layout_constraintTop_toTopOf="@+id/appName" />
+
+    <ImageView
+        android:id="@+id/coinImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/image_coin_content_description"
+        app:layout_constraintBottom_toBottomOf="@+id/appName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appName"
+        app:srcCompat="@drawable/coin_icon" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/label_btn_confirm"
+        style="@style/ButtonStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChangeLang" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/label_btn_cancel"
+        style="@style/ButtonStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/instrumentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Fender American Professional II Stratocaster"
+        style="@style/Heading"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirm"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+    <LinearLayout
+        android:id="@+id/bookingEmailLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/instrumentName">
+
+        <TextView
+            android:id="@+id/labelRentalEmail"
+            style="@style/Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_rental_email" />
+
+        <EditText
+            android:id="@+id/rentalEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="@string/hint_rental_email"
+            android:inputType="text|textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/steel_gray" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/labelRentalNumber"
+        style="@style/Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_rental_number"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/bookingEmailLayout" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/rentalNumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/rental_number_slider_content_description"
+        android:stepSize="1"
+        android:valueFrom="1"
+        android:valueTo="10"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirm"
+        app:layout_constraintTop_toBottomOf="@id/labelRentalNumber" />
+
+    <TextView
+        android:id="@+id/labelRentalTime"
+        style="@style/Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_rental_time"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/rentalNumber" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/rentalTime"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/rental_time_slider_content_description"
+        android:stepSize="1"
+        android:valueFrom="1"
+        android:valueTo="12"
+        app:layout_constraintStart_toEndOf="@+id/instrumentPicture"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirm"
+        app:layout_constraintTop_toBottomOf="@id/labelRentalTime" />
+
+    <TextView
+        android:id="@+id/rentalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_rental_price"
+        style="@style/Normal"
+        app:layout_constraintStart_toEndOf="@id/instrumentPicture"
+        app:layout_constraintEnd_toStartOf="@id/btnConfirm"
+        app:layout_constraintTop_toBottomOf="@id/rentalTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
