@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Climbing App</string>
-    <string name="climb_button">Climb</string>
-    <string name="fall_button">Fall</string>
-    <string name="reset_button">Reset</string>
-</resources>
