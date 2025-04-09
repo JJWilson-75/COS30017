@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Password Vault</string>
+
+    <string name="btn_new_label">New</string>
+    <string name="btn_view_label">View</string>
+    <string name="btn_delete_label">Delete</string>
+
+    <string name="login_icon_desc">Login Icon</string>
+    <string name="scrollable_list_desc">List of Passwords</string>
+
+    <string name="view_activity_title">View Login</string>
+    <string name="item_name_label">Item Name</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="url_label">Website URL</string>
+    <string name="note_label">Note</string>
+
+    <string name="new_login_activity_title">New Login</string>
+    <string name="enter_item_name_label">Enter Item Name</string>
+    <string name="enter_username_label">Enter Username</string>
+    <string name="enter_password_label"> Enter Password</string>
+    <string name="enter_url_label">Enter Website URL</string>
+    <string name="enter_note_label">Enter Note</string>
+
+    <string name="hint_enter_item_name_label">Facebook</string>
+    <string name="hint_enter_username_label">John123</string>
+    <string name="hint_enter_password_label">abc123456!</string>
+    <string name="hint_enter_url_label">facebook.com</string>
+    <string name="hint_enter_note_label">This is for main account</string>
+
+    <string name="btn_save_label">Save</string>
+
+    <string name="edit_login_activity_title">Edit Login</string>
+    <string name="btn_update_label">Update</string>
+    <string name="btn_edit_label">Edit</string>
+</resources>
